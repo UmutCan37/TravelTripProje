@@ -58,14 +58,6 @@ Tüm yorumları görüntüle
 
 Gereksiz yorumları silme
 
-📘 Rehber Yönetimi
-
-Rehber listesi
-
-Yeni rehber ekleme
-
-Rehber fotoğrafı ve açıklama düzenleme
-
 📄 Hakkımızda Yönetimi
 
 “Hakkımızda” sayfa metnini ve görsellerini düzenleme

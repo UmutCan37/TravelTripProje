@@ -1,0 +1,50 @@
+﻿@model TravelTripProje.Models.Class.Blog
+@{
+    ViewBag.Title = "BlogGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="card shadow-sm border-0">
+        <div class="card-header bg-success text-white">
+            <h5 class="mb-0">Blog Güncelle</h5>
+        </div>
+
+        <div class="card-body">
+
+            @using (Html.BeginForm("BlogGüncelleme", "Admin", FormMethod.Post))
+            {
+                <div class="mb-3">
+                    @Html.HiddenFor(x => x.ID);
+                    <label class="form-label">Blog Adı</label>
+                    @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control", placeholder = "Kategori adını girin..." })
+
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Tarih</label>
+                    @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control", placeholder = "Kategori adını girin..." })
+
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Acıklama</label>
+                    @Html.TextBoxFor(x => x.Acıklama, new { @class = "form-control", placeholder = "Kategori adını girin..." })
+
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Resim</label>
+                    @Html.TextBoxFor(x => x.BlogImage, new { @class = "form-control", placeholder = "Kategori adını girin..." })
+
+                </div>
+
+                <button type="submit" class="btn btn-success">
+                    Kaydet
+                </button>
+
+                <a href="/Admin/Index" class="btn btn-secondary ms-2">
+                    Geri Dön
+                </a>
+            }
+        </div>
+    </div>
+</div>
+
